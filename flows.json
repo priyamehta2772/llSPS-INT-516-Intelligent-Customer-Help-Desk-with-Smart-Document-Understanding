@@ -1,0 +1,173 @@
+[
+    {
+        "id": "36160f53.5a722",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "831b56a9.882418",
+        "type": "function",
+        "z": "36160f53.5a722",
+        "name": "",
+        "func": "msg.payload = msg.payload.input;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "660b4e64.ed9ae",
+                "c4e45945.dbba38"
+            ]
+        ]
+    },
+    {
+        "id": "467e8192.b342f",
+        "type": "function",
+        "z": "36160f53.5a722",
+        "name": "",
+        "func": "msg.payload.text=\"\";\nif(msg.payload.context.webhook_result_1){\n    for(var i in msg.payload.context.webhook_result_1.results){\n    msg.payload.text=msg.payload.text+\"\\n\"+msg.payload.context.webhook_result_1.results[i].text;\n}\n    msg.payload=msg.payload.text;\n}\nelse\nmsg.payload = msg.payload.output.text[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "5f37a990.a47e18",
+                "9040b4d5.1de878"
+            ]
+        ]
+    },
+    {
+        "id": "660b4e64.ed9ae",
+        "type": "debug",
+        "z": "36160f53.5a722",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 350,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fa42e3e8.89fb9",
+        "type": "ui_form",
+        "z": "36160f53.5a722",
+        "name": "",
+        "label": "",
+        "group": "c80f2715.ea7f78",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "options": [
+            {
+                "label": "Enter Query",
+                "value": "input",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "input": ""
+        },
+        "payload": "",
+        "submit": "search",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "831b56a9.882418"
+            ]
+        ]
+    },
+    {
+        "id": "5f37a990.a47e18",
+        "type": "ui_text",
+        "z": "36160f53.5a722",
+        "group": "a4306e29.e49e5",
+        "order": 1,
+        "width": "10",
+        "height": "8",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 670,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c4e45945.dbba38",
+        "type": "watson-conversation-v1",
+        "z": "36160f53.5a722",
+        "name": "",
+        "workspaceid": "53f1978d-56c5-483d-b914-c8599a48d623",
+        "multiuser": false,
+        "context": false,
+        "empty-payload": true,
+        "service-endpoint": "https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/1c2e7203-a1db-452d-a103-8bba92aada1a",
+        "timeout": "",
+        "optout-learning": false,
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "467e8192.b342f"
+            ]
+        ]
+    },
+    {
+        "id": "9040b4d5.1de878",
+        "type": "debug",
+        "z": "36160f53.5a722",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 680,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c80f2715.ea7f78",
+        "type": "ui_group",
+        "z": 0,
+        "name": "Intelligently Search a Manual ",
+        "tab": "9dc3c7de.298498",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a4306e29.e49e5",
+        "type": "ui_group",
+        "z": 0,
+        "name": "Result",
+        "tab": "9dc3c7de.298498",
+        "order": 3,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "9dc3c7de.298498",
+        "type": "ui_tab",
+        "z": 0,
+        "name": "Created by Priya",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": true
+    }
+]
