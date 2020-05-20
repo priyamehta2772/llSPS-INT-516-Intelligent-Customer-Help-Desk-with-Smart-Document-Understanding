@@ -1,4 +1,4 @@
-# llSPS-INT-516-Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding
+# Intelligent Customer Help Desk with Smart Document Understanding
 
 Title: Intelligent Customer Help Desk with Smart Document Understanding
 Domain: Artificial Intelligence 
@@ -7,10 +7,7 @@ Project Duration: 20 days
 Contributor: Priya Mehta 
 Contact ID: priyamehta2772@gmail.com
 Guidance: SmartBridge
-
-
-Skills Required:
-Python,IBM Cloud,IBM Watson
+Skills Required: Python, IBM Cloud platform, IBM Watson Assistant, IBM Discovery service
 
 Project Description:
 
