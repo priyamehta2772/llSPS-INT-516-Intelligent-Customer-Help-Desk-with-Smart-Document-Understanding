@@ -25,3 +25,7 @@ Scope of Work:
 -> Build a web application with integration to all these services & deploy the same on IBM Cloud Platform
 
 Here for Discovery dataset I have used Maruti Suzuki Celerio User Guide Book. 
+
+Link to Node-RED UI: https://node-red-ptiwn.eu-gb.mybluemix.net/ui
+
+Link to Video: 
