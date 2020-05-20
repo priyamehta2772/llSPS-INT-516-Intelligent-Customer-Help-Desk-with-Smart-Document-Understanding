@@ -1,7 +1,7 @@
-# Intelligent Customer Help Desk with Smart Document Understanding
+# Intelligent Customer Help Desk with Smart Document Understanding\
 
-Title: Intelligent Customer Help Desk with Smart Document Understanding
-Domain: Artificial Intelligence 
+Title: Intelligent Customer Help Desk with Smart Document Understanding\
+Domain: Artificial Intelligence \
 Start Date: 05/05/2020
 Project Duration: 20 days
 Contributor: Priya Mehta 
