@@ -7,7 +7,7 @@ Project Duration: 20 days\
 Contributor: Priya Mehta \
 Contact ID: priyamehta2772@gmail.com\
 Guidance: SmartBridge\
-Skills Required: Python, IBM Cloud platform, IBM Watson Assistant, IBM Discovery service\
+Skills Required: Python, IBM Cloud platform, IBM Watson Assistant, IBM Discovery service, Node-RED
 
 Project Description:
 
