@@ -24,4 +24,4 @@ Scope of Work:
 -> Create an IBM Cloud Functions web action that allows Watson Assistant to post queries to Watson Discovery\
 -> Build a web application with integration to all these services & deploy the same on IBM Cloud Platform
 
-
+Here for Discovery dataset I have used Maruti Suzuki Celerio User Guide Book. 
