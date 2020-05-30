@@ -28,4 +28,4 @@ Here for Discovery dataset I have used Maruti Suzuki Celerio User Guide Book.
 
 Link to Node-RED UI: https://node-red-ptiwn.eu-gb.mybluemix.net/ui
 
-Link to Video: 
+Link to Video: https://youtu.be/_S9JLm2B9DY
